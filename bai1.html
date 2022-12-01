@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form >
+    <p>Nhập vào số từ 1 đến 10:</p>
+    <input id="input" type="number" name="number" />
+    <input id="submit" type="submit" value="Gửi" />
+    <p id="an"></p>
+  </form>
+  <script>
+   
+      
+      const b = document.getElementById("submit");
+
+      b.onclick = (e) => {
+        let a = document.getElementById("input").value;
+        a= Number(a);
+       if(a>=1&& a<=10)
+       {
+        document.getElementById('an').innerHTML='nhap dung'
+       }
+       else{
+        document.getElementById('an').innerHTML='nhap sai'
+ 
+       }
+    }
+   
+  </script>
+</body>
+
+</html>
